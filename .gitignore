@@ -1,0 +1,3 @@
+# Arquivos temporários do wrangler (teste local)
+.wrangler/
+node_modules/
