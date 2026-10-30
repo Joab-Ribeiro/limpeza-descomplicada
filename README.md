@@ -1,18 +1,32 @@
 # Limpeza Descomplicada — página de vendas
 
-Cópia da página de vendas que estava no GreatPages, agora como um site próprio
-publicado na **Cloudflare** (Workers com arquivos estáticos). Tudo o que vai ao ar fica na pasta `public/`:
+Páginas que estavam no GreatPages, agora como um site próprio publicado na
+**Cloudflare** (Workers com arquivos estáticos). Tudo o que vai ao ar fica na
+pasta `public/`. Cada arquivo `.html` vira um endereço com o mesmo nome:
+
+| Página                     | Arquivo                             | Endereço                                              |
+|----------------------------|-------------------------------------|-------------------------------------------------------|
+| Limpeza Descomplicada      | `public/limpeza-descomplicada.html` | `lp.brunatreinamentos.com.br/limpeza-descomplicada`   |
+| Combo Niver da Prof        | `public/niver.html`                 | `lp.brunatreinamentos.com.br/niver`                   |
 
 ```
 public/
-  limpeza-descomplicada.html   → a página (abre em /limpeza-descomplicada)
-  assets/img/                  → imagens (WebP, ~0,7 MB no total)
+  *.html                       → as páginas
+  assets/img/                  → imagens em WebP (as da página Niver ficam em assets/img/niver/)
   _redirects                   → quem entra em "/" vai para /limpeza-descomplicada
   _headers                     → cache das imagens (7 dias)
   404.html                     → página de "não encontrada"
 ```
 
-## O que já vem configurado
+### Rastreamento por página
+
+- **Limpeza Descomplicada:** Google Tag Manager `GTM-TS7QPR2Z`, Pixel do Facebook
+  e o script próprio que repassa UTMs para o checkout (detalhes abaixo).
+- **Combo Niver:** Pixel do Facebook (`ViewContent`) e **Utmify**, que repassa as
+  UTMs (`xcod`/`sck`) para o checkout `payfast.greenn.com.br/redirect/282119` e
+  marca o link do WhatsApp. Botão flutuante do WhatsApp: `5547991719826`.
+
+## Limpeza Descomplicada: o que já vem configurado
 
 - **Checkout Greenn:** `https://payfast.greenn.com.br/redirect/179526` (4 botões).
   Os outros 3 botões rolam a página até o bloco de preço.
@@ -56,7 +70,7 @@ Se escolher outro subdomínio, troque `lp.brunatreinamentos.com.br` nas linhas
 
 ## Como editar o básico
 
-Abra `public/limpeza-descomplicada.html` e use "Localizar" (Ctrl+F):
+Abra o `.html` da página e use "Localizar" (Ctrl+F). Exemplos da Limpeza Descomplicada:
 
 | Quero mudar…              | Procure por                                   |
 |---------------------------|-----------------------------------------------|
