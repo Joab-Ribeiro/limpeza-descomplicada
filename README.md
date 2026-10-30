@@ -1,7 +1,7 @@
 # Limpeza Descomplicada — página de vendas
 
 Cópia da página de vendas que estava no GreatPages, agora como um site próprio
-publicado no **Cloudflare Pages**. Tudo o que vai ao ar fica na pasta `public/`:
+publicado na **Cloudflare** (Workers com arquivos estáticos). Tudo o que vai ao ar fica na pasta `public/`:
 
 ```
 public/
@@ -22,30 +22,23 @@ public/
   `gclid`, `ttclid`, `src`, `sck` etc. por 7 dias e repassa para o checkout.
   As UTMs também são mantidas nos redirecionamentos (`/` e `/limpeza-descomplicada/`).
 
-## Publicar no Cloudflare Pages (fazer uma vez)
+## Publicação na Cloudflare (Workers conectado ao GitHub)
 
-1. No painel da Cloudflare: **Workers & Pages → Create application → Pages →
-   Connect to Git**.
-2. Escolha **GitHub**, autorize e selecione o repositório
-   `limpeza-descomplicada` → **Begin setup**.
-3. Preencha:
-   - **Project name:** `brunatreinamentos` (ou outro nome; vira o endereço
-     `nome.pages.dev`)
-   - **Production branch:** a branch onde está a página
-   - **Framework preset:** `None`
-   - **Build command:** deixe vazio
-   - **Build output directory:** `public` ← importante
-4. **Save and Deploy**. Em ~1 minuto a página abre em
-   `https://<nome-do-projeto>.pages.dev/limpeza-descomplicada`.
-   Teste ali antes de ligar o domínio (inclusive clicar no botão de compra).
-5. No projeto: **Custom domains → Set up a custom domain** →
-   digite `lp.brunatreinamentos.com.br` → **Continue → Activate domain**.
-   Como o domínio já está na Cloudflare, o DNS é criado sozinho.
+O projeto `limpeza-descomplicada` na Cloudflare está ligado a este repositório.
+Toda alteração enviada para a branch de produção é publicada sozinha.
+
+- `wrangler.jsonc` (na raiz) diz à Cloudflare para publicar a pasta `public/`.
+  O `name` dele precisa ser igual ao nome do projeto no painel.
+- Configuração no painel: comando da build **vazio**, comando de implantação
+  `npx wrangler deploy`, diretório raiz `/`.
+
+### Ligar o domínio
+
+No projeto: **Configurações → Domínios e rotas → Adicionar → Domínio
+personalizado** → `lp.brunatreinamentos.com.br`. Como o domínio já está na
+Cloudflare, o DNS é criado sozinho.
 
 Endereço final: `https://lp.brunatreinamentos.com.br/limpeza-descomplicada`
-
-Depois disso, toda alteração enviada para a branch de produção no GitHub é
-publicada automaticamente.
 
 ### Por que um subdomínio (`lp.`) e não o `www`?
 
@@ -77,8 +70,8 @@ Abra `public/limpeza-descomplicada.html` e use "Localizar" (Ctrl+F):
 ## Testar localmente
 
 ```bash
-npx wrangler pages dev public
+npx wrangler dev
 ```
 
-Abre em `http://localhost:8788/limpeza-descomplicada`, com o mesmo comportamento
+Abre em `http://localhost:8787/limpeza-descomplicada`, com o mesmo comportamento
 da Cloudflare.
