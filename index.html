@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Limpeza Descomplicada</title>
+  <meta name="description" content="Aprenda técnicas simples pra limpar melhor, gastar menos produto e parar de sofrer na faxina. Curso Limpeza Descomplicada com Bruna Masalai.">
+  <meta name="robots" content="all">
+  <meta name="theme-color" content="#041b2d">
+
+  <!-- Prévia ao compartilhar no WhatsApp / Facebook -->
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Limpeza Descomplicada">
+  <meta property="og:description" content="Aprenda técnicas simples pra limpar melhor, gastar menos produto e parar de sofrer na faxina.">
+  <meta property="og:url" content="https://www.brunatreinamentos.com.br/limpeza-descomplicada">
+  <meta property="og:image" content="https://www.brunatreinamentos.com.br/limpeza-descomplicada/assets/img/compartilhar.jpg">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23de247b'/%3E%3Cpath d='M18 33l9 9 19-20' fill='none' stroke='%23fff' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://player.vimeo.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/img/hero-bg.webp">
+
+  <!-- Google Tag Manager (GA4, TikTok e demais tags configuradas no GTM) -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TS7QPR2Z');</script>
+
+  <!-- Meta Pixel (mesmo comportamento do GreatPages: init + ViewContent) -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '394447143723680');
+    fbq('track', 'ViewContent', {}, { eventID: 'LD.' + Date.now() + '.' + Math.random().toString(36).slice(2, 8) });
+  </script>
+
+  <style>
+    :root {
+      --navy: #041b2d;
+      --pink: #de247b;
+      --pink-dark: #9f215c;
+      --green: #44af0b;
+      --green-dark: #00712d;
+      --text: #242424;
+      --light: #f0f3f5;
+      --gradient: linear-gradient(90deg, #041b2d 0%, #041b2d 10%, #131c32 20%, #2e1d3c 30%, #4e1e48 40%, #722055 50%, #942160 60%, #b5226c 70%, #cf2375 80%, #db247a 90%);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      overflow-x: hidden;
+      background: var(--navy);
+      color: var(--text);
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      line-height: 1.1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    h1, h2, h3, p, ul { margin: 0; padding: 0; font-weight: inherit; font-size: inherit; }
+    ul { list-style: none; }
+    img { display: block; max-width: 100%; height: auto; }
+    b, strong { font-weight: 700; }
+    s { text-decoration: line-through; }
+    .pink { color: var(--pink); }
+    .nowrap { white-space: nowrap; }
+
+    .container { position: relative; width: 100%; max-width: 960px; margin: 0 auto; padding: 0 16px; }
+    .section { position: relative; overflow: hidden; }
+    .overlay { position: relative; }
+    .overlay::before { content: ""; position: absolute; inset: 0; background: #fff; opacity: var(--overlay, 0); pointer-events: none; }
+    .overlay > .container { z-index: 1; }
+
+    .ico { display: inline-block; flex: none; width: 1em; height: 1em; fill: currentColor; }
+
+    /* ---------- Botões ---------- */
+    .btn {
+      display: flex; align-items: center; justify-content: center;
+      width: 420px; max-width: 100%; min-height: 52px;
+      margin: 0 auto; padding: 10px 24px;
+      border-radius: 35px;
+      background: var(--pink); color: #fff;
+      box-shadow: 0 5px 0 var(--pink-dark);
+      font: 600 16px/1.3 "Montserrat", sans-serif;
+      text-align: center; text-decoration: none; text-transform: uppercase;
+      cursor: pointer; user-select: none;
+      transition: transform .12s ease-out, box-shadow .12s ease-out, filter .2s ease-out;
+    }
+    .btn:hover { filter: brightness(1.06); }
+    .btn:active { transform: translateY(4px); box-shadow: 0 1px 0 var(--pink-dark); }
+    .btn:focus-visible { outline: 3px solid #fff; outline-offset: 4px; }
+    .btn-green { background: var(--green); box-shadow: 0 5px 0 var(--green-dark); }
+    .btn-green:active { box-shadow: 0 1px 0 var(--green-dark); }
+
+    /* ---------- 1. Topo / vídeo ---------- */
+    .hero {
+      min-height: 742px;
+      padding: 59px 0 48px;
+      background: var(--navy) url("assets/img/hero-bg.webp") 50% 50% / cover no-repeat;
+    }
+    .hero h1 {
+      max-width: 786px; margin: 0 auto;
+      color: var(--light);
+      font-size: 37px; line-height: 1.1; font-weight: 700; text-align: center;
+    }
+    .hero-video {
+      width: 693px; max-width: 100%;
+      margin: 44px auto 0;
+      aspect-ratio: 16 / 9;
+      border-radius: 38px; overflow: hidden;
+      background: #000;
+      animation: zoom-in 1s cubic-bezier(.25,.46,.45,.94) both;
+    }
+    .hero-video iframe { display: block; width: 100%; height: 100%; border: 0; }
+    .hero .btn { margin-top: 60px; }
+    @keyframes zoom-in { from { transform: scale(0); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+
+    /* ---------- 2. Faixa de subtítulo ---------- */
+    .subtitulo { padding: 26px 0; background: var(--navy); }
+    .subtitulo h2 { max-width: 890px; margin: 0 auto; color: var(--light); font-size: 26px; line-height: 1.1; text-align: center; }
+
+    /* ---------- 3. Para quem é ---------- */
+    .publico {
+      --overlay: .91;
+      padding: 20px 0 30px;
+      background: #fffefc url("assets/img/fundo-claro.webp") 50% 50% / cover no-repeat;
+    }
+    .publico-grid { display: grid; grid-template-columns: 1fr 2px 466px; align-items: center; column-gap: 28px; }
+    .publico-titulo { justify-self: center; max-width: 300px; color: #212121; font-size: 32px; line-height: 1.1; }
+    .publico-linha { align-self: stretch; background: var(--pink); }
+    .publico-lista { display: grid; gap: 22px; padding: 12px 0 14px; }
+    .publico-lista li { display: flex; gap: 4px; align-items: flex-start; color: #212121; font-size: 20px; line-height: 1.1; }
+    .publico-lista .ico { width: 29px; height: 29px; margin-top: -3px; color: var(--green); }
+    .publico .btn { margin: 26px 0 0; }
+
+    /* ---------- 4. Benefícios ---------- */
+    .beneficios { padding: 32px 0; background: var(--gradient); }
+    .beneficios-card {
+      display: grid; grid-template-columns: 1fr 238px 238px; gap: 21px 16px; align-items: center;
+      padding: 28px 27px; border-radius: 22px; background: #fffefc;
+    }
+    .beneficios-card h2 { grid-row: span 2; max-width: 344px; color: var(--text); font-size: 30px; line-height: 1.1; }
+    .beneficio {
+      display: flex; align-items: center; justify-content: center; gap: 12px;
+      min-height: 125px; padding: 12px 16px;
+      border: 2px solid var(--pink); border-radius: 12px; background: #fff;
+      color: var(--text); font-size: 14.6px; line-height: 1.1; font-weight: 700;
+    }
+    .beneficio .ico { width: 41px; height: 41px; color: var(--green); }
+
+    /* ---------- 5. Conteúdo do curso ---------- */
+    .conteudo {
+      --overlay: .85;
+      padding: 33px 0 48px;
+      background: #fff url("assets/img/fundo-claro.webp") 50% 50% / cover no-repeat;
+    }
+    .titulo-secao { color: var(--navy); font-size: 30px; line-height: 1.1; text-align: center; }
+    .pilulas { display: grid; gap: 14px; max-width: 743px; margin: 26px auto 0; }
+    .pilula {
+      display: flex; align-items: center; justify-content: center;
+      min-height: 92px; padding: 14px 32px;
+      border-radius: 54px; background: var(--gradient);
+      color: #fff; font-size: 21px; line-height: 1.1; text-align: center;
+    }
+    .conteudo-card {
+      display: grid; grid-template-columns: 1fr 316px; gap: 24px; align-items: start;
+      max-width: 890px; margin: 44px auto 0; padding: 13px 15px 13px 28px;
+      border-radius: 26px; background: #fff;
+      box-shadow: 4px 4px 8px rgba(114,114,114,.75);
+    }
+    .conteudo-lista { display: grid; gap: 18.7px; padding: 38px 0 24px; }
+    .conteudo-lista li { display: flex; gap: 6px; align-items: flex-start; color: #000; font-size: 17px; line-height: 1.1; }
+    .conteudo-lista .ico { width: 31px; height: 31px; margin-top: -6px; color: var(--pink); }
+
+    .melhor { max-width: 837px; margin: 18px auto 0; color: #000; text-align: center; }
+    .melhor h2 { font-size: 26px; font-weight: 700; }
+    .melhor p { margin-top: 20px; font-size: 22px; line-height: 1.1; }
+    .melhor p + p { margin-top: 24px; }
+    .conteudo .btn { margin-top: 42px; }
+
+    /* Carrossel dos módulos */
+    .carrossel-moldura { padding: 15px 17px; border: 2px solid var(--pink); border-radius: 25px; }
+    .carrossel {
+      position: relative; aspect-ratio: 281 / 406; border-radius: 24px; overflow: hidden;
+      background: #ddd;
+      filter: drop-shadow(-4px 6px 10px rgba(0,0,0,.6));
+    }
+    .carrossel-trilho {
+      display: flex; width: 100%; height: 100%;
+      overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth;
+      scrollbar-width: none; overscroll-behavior-x: contain;
+    }
+    .carrossel-trilho::-webkit-scrollbar { display: none; }
+    .carrossel-trilho img { flex: 0 0 100%; width: 100%; height: 100%; object-fit: cover; scroll-snap-align: start; }
+    .carrossel-seta {
+      position: absolute; top: 50%; z-index: 2;
+      display: flex; align-items: center; justify-content: center;
+      width: 36px; height: 36px; margin-top: -18px; padding: 0;
+      border: 0; background: transparent; color: #fff; cursor: pointer;
+      filter: drop-shadow(0 1px 2px rgba(0,0,0,.7));
+    }
+    .carrossel-seta .ico { width: 28px; height: 28px; }
+    .carrossel-seta.anterior { left: 2px; }
+    .carrossel-seta.proxima { right: 2px; }
+
+    /* ---------- 6. Bônus ---------- */
+    .bonus {
+      --overlay: .62;
+      padding: 43px 0 40px;
+      border-top: 12px solid var(--navy);
+      background: #fff url("assets/img/fundo-padrao.webp") 0% 60% / cover no-repeat;
+    }
+    .bonus .titulo-secao { color: #000; }
+    .bonus-lista { display: grid; gap: 14px; max-width: 675px; margin: 40px auto 0; }
+    .bonus-item {
+      display: grid; grid-template-columns: 160px 3px 1fr; align-items: stretch;
+      min-height: 92px; border-radius: 22px; background: #fff;
+      filter: drop-shadow(-6px 0 0 var(--pink));
+    }
+    .bonus-item:nth-child(even) { filter: drop-shadow(6px 0 0 var(--pink)); }
+    .bonus-numero { display: flex; align-items: center; justify-content: center; color: var(--navy); font-size: 23px; font-weight: 700; white-space: nowrap; }
+    .bonus-linha { background: var(--pink); }
+    .bonus-texto { display: flex; flex-direction: column; justify-content: center; padding: 12px 24px; color: var(--text); font-size: 17.8px; line-height: 1.1; }
+    .bonus-texto .preco { color: var(--pink); font-weight: 700; }
+    .bonus .btn { margin-top: 54px; }
+
+    /* ---------- 7. Depoimentos ---------- */
+    .depoimentos { padding: 26px 0 36px; background: var(--navy); box-shadow: 0 0 7px rgb(144,144,144); }
+    .depoimentos .titulo-secao { color: #fff; }
+    .depoimentos-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; margin-top: 56px; }
+    .video-vertical { aspect-ratio: 174 / 311; border-radius: 10px; overflow: hidden; background: #0b2a42; }
+    .video-vertical iframe { display: block; width: 100%; height: 100%; border: 0; }
+    .depoimentos .btn { margin-top: 46px; }
+
+    /* ---------- 8. Certificado ---------- */
+    .certificado {
+      --overlay: .76;
+      padding: 72px 0 72px;
+      background: #fff url("assets/img/fundo-padrao.webp") 50% 50% / cover no-repeat;
+    }
+    .certificado-grid { display: grid; grid-template-columns: 1fr 480px; column-gap: 40px; align-items: center; }
+    .certificado h2 { max-width: 300px; margin-left: 49px; color: #000; font-size: 34px; line-height: 1.1; }
+    .certificado-img { border-radius: 20px; filter: drop-shadow(1px 1px 7px rgb(174,174,174)); }
+    .certificado .btn { grid-column: 2; margin-top: 33px; }
+
+    /* ---------- 9. Quem é a Bruna ---------- */
+    .bruna { background: var(--navy) url("assets/img/fundo-bruna.webp") 50% 50% / cover no-repeat; }
+    .bruna .container { display: flex; align-items: center; min-height: 539px; padding-top: 59px; padding-bottom: 70px; }
+    .bruna-card {
+      position: relative; z-index: 2;
+      width: 589px; max-width: 100%; padding: 20px 26px 32px 12px;
+      border: 2px solid #858585; border-radius: 20px; background: var(--navy);
+    }
+    .bruna-card .titulo-img { width: 351px; max-width: 100%; }
+    .bruna-card .texto { margin-top: 14px; padding-left: 17px; color: var(--light); font-size: 18px; line-height: 1.1; }
+    .bruna-card .texto p + p { margin-top: 20px; }
+    .bruna-foto { position: absolute; left: 529px; bottom: 16px; width: 557px; max-width: none; }
+
+    /* ---------- 10. Oferta ---------- */
+    .oferta { padding: 42px 0 52px; background: var(--navy); }
+    .oferta-card {
+      width: 426px; max-width: 100%; margin: 0 auto; padding: 27px 17px 28px;
+      border: 1px solid var(--green); border-radius: 22px; background: var(--navy);
+      box-shadow: 0 5px 0 var(--green), 4px 2px 19px rgba(5,5,5,.9);
+      color: var(--light); text-align: center;
+    }
+    .oferta-card h2 { color: #fff; font-size: 30px; line-height: 1.1; font-weight: 700; }
+    .oferta-de { margin-top: 18px; font-size: 30px; }
+    .oferta-de s { color: var(--pink); font-weight: 700; }
+    .oferta-por { margin-top: 14px; font-size: 26px; }
+    .oferta-parcela { display: flex; align-items: center; justify-content: center; gap: 14px; margin-top: 4px; }
+    .oferta-parcela small { font-size: 24px; font-weight: 700; }
+    .oferta-parcela strong { font-size: 65px; line-height: 1.1; }
+    .oferta-avista { margin-top: 6px; color: #fff; font-size: 24px; font-weight: 700; }
+    .oferta .btn { width: 100%; min-height: 60px; margin-top: 18px; font-size: 20px; }
+    .oferta-btn-green:hover { filter: brightness(1.08); }
+    .oferta-obs { margin-top: 22px; color: #fff; font-size: 20px; font-weight: 700; }
+
+    /* ---------- 11. Garantia ---------- */
+    .garantia { padding: 47px 0 41px; background: var(--navy); }
+    .garantia-box {
+      display: grid; grid-template-columns: 220px 1fr; gap: 38px; align-items: center;
+      max-width: 817px; min-height: 301px; margin: 0 auto; padding: 40px 48px 40px 56px;
+      border: 1px solid var(--green); border-radius: 20px;
+    }
+    .garantia-box img { width: 168px; margin: 0 auto; }
+    .garantia-box .texto { color: #fff; font-size: 18px; line-height: 1.1; }
+    .garantia-box .texto p + p { margin-top: 20px; }
+
+    /* ---------- 12. Rodapé ---------- */
+    .rodape { padding: 13px 16px 24px; background: var(--navy); color: var(--light); font-size: 16px; line-height: 1.1; text-align: center; }
+
+    @media (min-width: 801px) and (hover: hover) {
+      .fixo { background-attachment: fixed; }
+    }
+
+    /* ==================== CELULAR ==================== */
+    @media (max-width: 800px) {
+      .btn { font-size: 14px; min-height: 46px; padding: 8px; }
+
+      .hero .container { padding: 0 10px; }
+      .hero { min-height: 0; padding: 30px 0 32px; background-size: auto; background-position: 13.66% 46.83%; }
+      .hero h1 { font-size: 16px; line-height: 1.4; text-shadow: 0 1px 1px #000; }
+      .hero-video { width: 317px; margin-top: 16px; border-radius: 38px; }
+      .hero .btn { width: 313px; min-height: 41px; margin-top: 30px; }
+
+      .subtitulo { padding: 14px 0 16px; }
+      .subtitulo h2 { font-size: 17px; line-height: 1.4; }
+
+      .publico { padding: 12px 0 15px; }
+      .publico-grid { grid-template-columns: 1fr; }
+      .publico-titulo { max-width: 295px; font-size: 24px; line-height: 1.4; text-align: center; }
+      .publico-linha { display: none; }
+      .publico-lista { gap: 25px; margin-top: 24px; padding: 0 0 0 0; }
+      .publico-lista li { gap: 6px; font-size: 15px; line-height: 1.4; }
+      .publico-lista .ico { width: 30px; height: 30px; margin-top: 0; }
+      .publico .btn { width: 305px; margin: 40px auto 0; }
+
+      .beneficios { padding: 22px 0 36px; }
+      .beneficios .container { padding: 0 10px; }
+      .beneficios-card { grid-template-columns: 1fr; justify-items: center; gap: 20px; padding: 19px 8px 30px; }
+      .beneficios-card h2 { grid-row: auto; max-width: 324px; font-size: 20px; line-height: 1.2; text-align: center; }
+      .beneficio { flex-direction: column; gap: 10px; width: 254px; min-height: 149px; font-size: 14px; line-height: 1.4; text-align: center; }
+      .beneficio.acesso { order: 5; }
+      .beneficios-card h2 { order: 0; }
+      .beneficio { order: 1; }
+
+      .conteudo { padding: 28px 0 32px; }
+      .titulo-secao { font-size: 21px; line-height: 1.4; }
+      .conteudo .titulo-secao { margin: 0 -16px; }
+      .pilulas { margin: 18px -16px 0; gap: 16px; }
+      .pilula { min-height: 121px; padding: 16px 40px; font-size: 15px; line-height: 1.4; }
+      .pilula:first-child { order: 2; }
+      .conteudo-card { grid-template-columns: 1fr; gap: 12px; margin: 18px -21px 0; padding: 12px 9px 6px; }
+      .carrossel-moldura { grid-row: 1; padding: 8px 7px; }
+      .conteudo-lista { gap: 30px; padding: 0 0 12px; }
+      .conteudo-lista li { font-size: 15px; line-height: 1.4; }
+      .conteudo-lista .ico { margin-top: 0; }
+      .melhor h2 { font-size: 17px; line-height: 1.4; }
+      .melhor p { margin-top: 10px; font-size: 17px; line-height: 1.4; }
+      .conteudo .btn { margin-top: 30px; }
+
+      .bonus { padding: 24px 0 36px; border-top: 0; }
+      .bonus .titulo-secao { margin: 0 -10px; }
+      .bonus-lista { gap: 18px; margin-top: 26px; }
+      .bonus-item { grid-template-columns: 101px 3px 1fr; min-height: 107px; margin-right: -46px; border-radius: 24px; }
+      .bonus-item:nth-child(even) { margin-right: 0; margin-left: -46px; padding-left: 46px; }
+      .bonus-numero { font-size: 15px; }
+      .bonus-texto { padding: 12px 52px 12px 14px; font-size: 14px; line-height: 1.4; }
+      .bonus-item:nth-child(even) .bonus-texto { padding-right: 18px; }
+      .bonus .btn { margin-top: 32px; }
+
+      .depoimentos { padding: 24px 0 26px; }
+      .depoimentos .container { padding: 0 10px; }
+      .depoimentos-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 18px 30px; margin-top: 24px; }
+      .video-vertical { width: calc(50% - 15px); max-width: 150px; border-radius: 25px; }
+      .depoimentos .btn { width: 272px; margin-top: 30px; }
+
+      .certificado { padding: 26px 0 32px; }
+      .certificado-grid { grid-template-columns: 1fr; row-gap: 16px; }
+      .certificado h2 { max-width: none; margin-left: 0; font-size: 21px; line-height: 1.4; text-align: center; }
+      .certificado-img { width: 100%; max-width: 340px; margin: 0 auto; }
+      .certificado .btn { grid-column: 1; width: 340px; margin-top: 10px; }
+
+      .bruna .container { flex-direction: column; min-height: 0; padding-top: 0; padding-bottom: 40px; }
+      .bruna-foto { position: relative; left: auto; bottom: auto; width: 330px; max-width: 100%; margin: 14px auto 0; }
+      .bruna-card { width: 329px; margin-top: -92px; padding: 14px 12px 26px; }
+      .bruna-card .titulo-img { width: 274px; }
+      .bruna-card .texto { margin-top: 10px; padding-left: 6px; font-size: 16px; }
+
+      .oferta { padding: 31px 0 56px; }
+      .oferta-card { width: 304px; padding: 14px 18px 22px; }
+      .oferta-card h2 { font-size: 20.3px; line-height: 1.2; }
+      .oferta-de { margin-top: 10px; font-size: 22px; line-height: 1.4; }
+      .oferta-por { margin-top: 6px; font-size: 17.2px; line-height: 1.4; }
+      .oferta-parcela { gap: 10px; margin-top: 0; }
+      .oferta-parcela small { font-size: 19.4px; }
+      .oferta-parcela strong { font-size: 36.6px; line-height: 1.4; }
+      .oferta-avista { margin-top: 0; font-size: 16px; line-height: 1.4; }
+      .oferta .btn { min-height: 49px; margin-top: 12px; font-size: 13px; }
+      .oferta-obs { margin-top: 12px; font-size: 16px; line-height: 1.4; }
+
+      .garantia { padding: 0 0 22px; }
+      .garantia-box { grid-template-columns: 1fr; gap: 16px; min-height: 0; padding: 22px 6px 26px; text-align: center; }
+      .garantia-box img { width: 74px; }
+      .garantia-box .texto { font-size: 16px; }
+
+      .rodape { padding: 10px 16px 14px; border-top: 1px solid rgb(163,186,198); border-bottom: 1px solid rgb(163,186,198); font-size: 11px; line-height: 1.4; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html, .carrossel-trilho { scroll-behavior: auto; }
+      .hero-video { animation: none; }
+    }
+  </style>
+</head>
+<body>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TS7QPR2Z" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=394447143723680&ev=ViewContent&noscript=1"></noscript>
+
+  <!-- Ícones (Material Icons) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-check-circle" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></symbol>
+    <symbol id="i-prev" viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></symbol>
+    <symbol id="i-next" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></symbol>
+  </svg>
+
+  <main>
+    <!-- 1. Topo com vídeo -->
+    <section class="section hero">
+      <div class="container">
+        <h1>A FAXINA SÓ É PESADA QUANDO VOCÊ NÃO SABE LIMPAR DO JEITO CERTO!</h1>
+        <div class="hero-video">
+          <iframe src="https://player.vimeo.com/video/1177483040?autoplay=1&amp;controls=1&amp;playsinline=1" title="Limpeza Descomplicada - vídeo de apresentação" allow="autoplay; fullscreen; picture-in-picture; accelerometer" allowfullscreen></iframe>
+        </div>
+        <a class="btn" href="#oferta">QUERO LIMPAR MELHOR SEM SOFRER</a>
+      </div>
+    </section>
+
+    <!-- 2. Subtítulo -->
+    <section class="section subtitulo">
+      <div class="container">
+        <h2>Aprenda <b>técnicas simples </b>pra limpar melhor, gastar menos produto e <b>parar de sofrer na faxina.</b></h2>
+      </div>
+    </section>
+
+    <!-- 3. Para quem é -->
+    <section class="section overlay fixo publico">
+      <div class="container publico-grid">
+        <h2 class="publico-titulo">Para <b class="pink">DIARISTAS E DONAS DE CASA,</b> que querem:</h2>
+        <div class="publico-linha" aria-hidden="true"></div>
+        <div>
+          <ul class="publico-lista">
+            <li><svg class="ico"><use href="#i-check-circle"/></svg><span>Fazer a faxina render mais... sem passar o dia inteiro limpando;</span></li>
+            <li><svg class="ico"><use href="#i-check-circle"/></svg><span>Aprender a remover aquelas sujeiras que parecem impossíveis de sair;</span></li>
+            <li><svg class="ico"><use href="#i-check-circle"/></svg><span>Terminar a faxina sem ficar destruída de cansaço;</span></li>
+            <li><svg class="ico"><use href="#i-check-circle"/></svg><span>Descobrir o jeito certo de limpar box, banheiro, piso, rejunte e muito mais!</span></li>
+          </ul>
+          <a class="btn btn-green" href="#oferta">QUERO COMEÇAR HOJE</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Benefícios -->
+    <section class="section beneficios">
+      <div class="container">
+        <div class="beneficios-card">
+          <h2><b>Aulas práticas </b>pra você assistir no seu tempo... e aplicar direto na sua faxina.</h2>
+          <div class="beneficio"><svg class="ico"><use href="#i-check-circle"/></svg><span>Passo a passo simples em vídeo</span></div>
+          <div class="beneficio acesso"><svg class="ico"><use href="#i-check-circle"/></svg><span>Acesso imediato após a compra;</span></div>
+          <div class="beneficio"><svg class="ico"><use href="#i-check-circle"/></svg><span>Área de Membros Premium (Estilo Netflix)</span></div>
+          <div class="beneficio"><svg class="ico"><use href="#i-check-circle"/></svg><span>App próprio pra você instalar no seu celular</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. O que você vai aprender -->
+    <section class="section overlay fixo conteudo">
+      <div class="container">
+        <h2 class="titulo-secao">O que você vai aprender no curso <br><b class="pink">LIMPEZA DESCOMPLICADA:</b></h2>
+
+        <div class="pilulas">
+          <p class="pilula"><span><b>Aulas diretas e práticas</b> pra você parar de limpar no achismo... e começar a limpar com técnica.</span></p>
+          <p class="pilula"><span>Desde as noções básicas até <b>técnicas avançadas de limpezas especializadas</b>, como pós-obra e limpeza de vidros, e muito mais!</span></p>
+        </div>
+
+        <div class="conteudo-card">
+          <ul class="conteudo-lista">
+            <li><svg class="ico"><use href="#i-check"/></svg><span>Você vai aprender o passo a passo para uma limpeza definitiva de rejuntes.</span></li>
+            <li><svg class="ico"><use href="#i-check"/></svg><span>Como limpar melhor usando produtos de mercado</span></li>
+            <li><svg class="ico"><use href="#i-check"/></svg><span>Limpeza com Produtos Profissionais</span></li>
+            <li><svg class="ico"><use href="#i-check"/></svg><span>Criar sua própria lista com os produtos certos para a sua casa.</span></li>
+            <li><svg class="ico"><use href="#i-check"/></svg><span>Descobrir a verdade sobre a limpeza de banheiros.</span></li>
+            <li><svg class="ico"><use href="#i-check"/></svg><span>Aprender, na prática, como diluir produtos corretamente.</span></li>
+            <li><svg class="ico"><use href="#i-check"/></svg><span>Limpar superfícies muito engorduradas de forma simples e eficaz com produtos profissionais.</span></li>
+            <li><svg class="ico"><use href="#i-check"/></svg><span>Realizar uma limpeza pós-obra básica de forma eficiente.</span></li>
+            <li><svg class="ico"><use href="#i-check"/></svg><span>Dominar os segredos da limpeza de porcelanatos.</span></li>
+          </ul>
+
+          <div class="carrossel-moldura">
+            <div class="carrossel" data-carrossel>
+              <button class="carrossel-seta anterior" type="button" aria-label="Módulo anterior"><svg class="ico"><use href="#i-prev"/></svg></button>
+              <div class="carrossel-trilho" tabindex="0" aria-label="Módulos do curso">
+                <img src="assets/img/modulo-01.webp" width="640" height="960" alt="Módulo do curso Limpeza Descomplicada">
+                <img src="assets/img/modulo-02.webp" width="640" height="960" alt="Módulo do curso Limpeza Descomplicada" loading="lazy">
+                <img src="assets/img/modulo-03.webp" width="640" height="960" alt="Módulo do curso Limpeza Descomplicada" loading="lazy">
+                <img src="assets/img/modulo-04.webp" width="640" height="960" alt="Módulo do curso Limpeza Descomplicada" loading="lazy">
+                <img src="assets/img/modulo-05.webp" width="640" height="960" alt="Módulo do curso Limpeza Descomplicada" loading="lazy">
+                <img src="assets/img/modulo-06.webp" width="640" height="960" alt="Módulo do curso Limpeza Descomplicada" loading="lazy">
+                <img src="assets/img/modulo-07.webp" width="640" height="960" alt="Módulo do curso Limpeza Descomplicada" loading="lazy">
+                <img src="assets/img/modulo-08.webp" width="640" height="960" alt="Módulo do curso Limpeza Descomplicada" loading="lazy">
+                <img src="assets/img/modulo-09.webp" width="640" height="960" alt="Módulo do curso Limpeza Descomplicada" loading="lazy">
+                <img src="assets/img/modulo-10.webp" width="640" height="960" alt="Módulo do curso Limpeza Descomplicada" loading="lazy">
+                <img src="assets/img/modulo-11.webp" width="640" height="960" alt="Módulo do curso Limpeza Descomplicada" loading="lazy">
+                <img src="assets/img/modulo-12.webp" width="640" height="960" alt="Módulo do curso Limpeza Descomplicada" loading="lazy">
+                <img src="assets/img/modulo-13.webp" width="640" height="960" alt="Módulo do curso Limpeza Descomplicada" loading="lazy">
+                <img src="assets/img/modulo-14.webp" width="640" height="960" alt="Módulo do curso Limpeza Descomplicada" loading="lazy">
+                <img src="assets/img/modulo-15.webp" width="640" height="960" alt="Módulo do curso Limpeza Descomplicada" loading="lazy">
+              </div>
+              <button class="carrossel-seta proxima" type="button" aria-label="Próximo módulo"><svg class="ico"><use href="#i-next"/></svg></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="melhor">
+          <h2>E o melhor...</h2>
+          <p>Ao entrar no curso, você vai aprender a limpar com mais agilidade, economizar produto e parar de perder tempo com técnica errada.</p>
+          <p>Você vai descobrir quais produtos realmente ajudam... e como usar cada um do jeito certo.</p>
+          <p>No final, você não vai apenas limpar melhor... você vai sentir segurança pra cuidar da casa ou atender clientes com muito mais confiança.</p>
+        </div>
+        <a class="btn" href="#oferta">QUERO ME TORNAR MAIS EFICIENTE</a>
+      </div>
+    </section>
+
+    <!-- 6. Bônus -->
+    <section class="section overlay bonus">
+      <div class="container">
+        <h2 class="titulo-secao"><b class="pink">BÔNUS </b>que acompanha o curso de Limpeza Descomplicada!</h2>
+        <div class="bonus-lista">
+          <div class="bonus-item">
+            <div class="bonus-numero">BÔNUS 01</div><div class="bonus-linha"></div>
+            <div class="bonus-texto"><span><b>Diarista Empresária - </b>aprenda a vender os seus serviços</span><span class="preco">de <s>R$197,00</s> por R$0,00.</span></div>
+          </div>
+          <div class="bonus-item">
+            <div class="bonus-numero">BÔNUS 02</div><div class="bonus-linha"></div>
+            <div class="bonus-texto"><b>Como Lavar e Higienizar Panos de chão</b><span class="preco">de <s>R$37,00</s> por R$0,00.</span></div>
+          </div>
+          <div class="bonus-item">
+            <div class="bonus-numero">BÔNUS 03</div><div class="bonus-linha"></div>
+            <div class="bonus-texto"><b>Limpeza de Pisos com Pisoclean</b><span class="preco">de <s>R$97,00</s> por R$0,00.</span></div>
+          </div>
+          <div class="bonus-item">
+            <div class="bonus-numero">BÔNUS 04</div><div class="bonus-linha"></div>
+            <div class="bonus-texto"><b>Revitalização de Porcelanato com Máquina</b><span class="preco">de <s>R$47,00</s> por R$0,00.</span></div>
+          </div>
+          <div class="bonus-item">
+            <div class="bonus-numero">BÔNUS 05</div><div class="bonus-linha"></div>
+            <div class="bonus-texto"><b>Limpeza Pós Obra Básica</b><span class="preco">de <s>R$297,00</s> por R$0,00.</span></div>
+          </div>
+        </div>
+        <a class="btn" href="https://payfast.greenn.com.br/redirect/179526" target="_blank" rel="noopener">EU QUERO TODOS OS BÔNUS</a>
+      </div>
+    </section>
+
+    <!-- 7. Depoimentos -->
+    <section class="section depoimentos">
+      <div class="container">
+        <h2 class="titulo-secao">Veja a transformação das <br><b class="pink">MINHAS ALUNAS</b></h2>
+        <div class="depoimentos-grid">
+          <div class="video-vertical"><iframe src="https://www.youtube.com/embed/MkC5ATMtG-M?controls=1&amp;playsinline=1&amp;rel=0" title="Depoimento de aluna 1" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          <div class="video-vertical"><iframe src="https://www.youtube.com/embed/3jHgOTIK6Bk?controls=1&amp;playsinline=1&amp;rel=0" title="Depoimento de aluna 2" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          <div class="video-vertical"><iframe src="https://www.youtube.com/embed/t1VIQuQCH1w?controls=1&amp;playsinline=1&amp;rel=0" title="Depoimento de aluna 3" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          <div class="video-vertical"><iframe src="https://www.youtube.com/embed/BqsHk00hv3U?controls=1&amp;playsinline=1&amp;rel=0" title="Depoimento de aluna 4" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          <div class="video-vertical"><iframe src="https://www.youtube.com/embed/3kDSYOmKQ0I?controls=1&amp;playsinline=1&amp;rel=0" title="Depoimento de aluna 5" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+        <a class="btn" href="https://payfast.greenn.com.br/redirect/179526" target="_blank" rel="noopener">QUERO SER A PRÓXIMA</a>
+      </div>
+    </section>
+
+    <!-- 8. Certificado -->
+    <section class="section overlay certificado">
+      <div class="container certificado-grid">
+        <h2>Conclua o curso e receba seu <br><b class="pink">CERTIFICADO!</b></h2>
+        <img class="certificado-img" src="assets/img/certificado.webp" width="1000" height="707" alt="Certificado de conclusão do curso Limpeza Descomplicada" loading="lazy">
+        <a class="btn" href="https://payfast.greenn.com.br/redirect/179526">GARANTIR TODOS OS BENEFÍCIOS</a>
+      </div>
+    </section>
+
+    <!-- 9. Quem é a Bruna -->
+    <section class="section bruna">
+      <div class="container">
+        <img class="bruna-foto" src="assets/img/bruna.webp" width="760" height="706" alt="Bruna Masalai" loading="lazy">
+        <div class="bruna-card">
+          <h2><img class="titulo-img" src="assets/img/quem-e-a-bruna.webp" width="720" height="162" alt="Quem é a Bruna Masalai?" loading="lazy"></h2>
+          <div class="texto">
+            <p>Bruna Masalai transformou a própria realidade através da limpeza: saiu de endividada, com mais de 100 mil negativos, para uma empresária no ramo da limpeza que fatura mais de 300 mil por ano com prestação de serviços de faxina.</p>
+            <p>Criadora de vários cursos online e apostilas de limpeza que já transformaram a vida de centenas de alunas.</p>
+            <p>É professora de mais de 7 mil alunas somando todos os seus cursos e apostilas.</p>
+            <p>E agora vai encurtar o seu caminho rumo a uma limpeza rápida e eficaz de verdade.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Oferta -->
+    <section class="section oferta" id="oferta">
+      <div class="container">
+        <div class="oferta-card">
+          <h2>ÚLTIMOS DIAS<br>com a condição<br>ESPECIAL</h2>
+          <p class="oferta-de">De: <s>R$897,00</s></p>
+          <p class="oferta-por">POR APENAS</p>
+          <p class="oferta-parcela"><small>12x de</small> <strong>20,25*</strong></p>
+          <p class="oferta-avista">ou R$197,00 à vista</p>
+          <a class="btn btn-green oferta-btn-green" href="https://payfast.greenn.com.br/redirect/179526" target="_blank" rel="noopener">EU QUERO</a>
+          <p class="oferta-obs">*acesso vitalício</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. Garantia -->
+    <section class="section garantia">
+      <div class="container">
+        <div class="garantia-box">
+          <img src="assets/img/selo-garantia.webp" width="293" height="339" alt="Garantia de 7 dias" loading="lazy">
+          <div class="texto">
+            <p>Se você ainda está em dúvida, eu vou facilitar sua decisão.</p>
+            <p>Você tem 7 dias para acessar o conteúdo e testar.</p>
+            <p>Se não gostar, basta pedir o reembolso e devolveremos 100% do seu dinheiro. Sem risco nenhum pra você.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    Limpeza Descomplicada - Bruna Masalai<br>Todos os Direitos Reservados.
+  </footer>
+
+  <!-- Carrossel dos módulos: passa sozinho, setas e arrastar com o dedo -->
+  <script>
+    (function () {
+      document.querySelectorAll('[data-carrossel]').forEach(function (box) {
+        var trilho = box.querySelector('.carrossel-trilho');
+        var slides = trilho.children;
+        var pausadoAte = 0;
+
+        function atual() { return Math.round(trilho.scrollLeft / trilho.clientWidth); }
+        function ir(i) {
+          var n = slides.length;
+          i = (i + n) % n;
+          if (slides[i + 1]) slides[i + 1].loading = 'eager'; // pré-carrega o próximo
+          trilho.scrollTo({ left: i * trilho.clientWidth });
+        }
+        function pausar() { pausadoAte = Date.now() + 6000; }
+
+        box.querySelector('.anterior').addEventListener('click', function () { pausar(); ir(atual() - 1); });
+        box.querySelector('.proxima').addEventListener('click', function () { pausar(); ir(atual() + 1); });
+        ['pointerdown', 'touchstart', 'wheel'].forEach(function (ev) { trilho.addEventListener(ev, pausar, { passive: true }); });
+
+        setInterval(function () {
+          if (Date.now() < pausadoAte || document.hidden) return;
+          var r = box.getBoundingClientRect();
+          if (r.bottom < 0 || r.top > window.innerHeight) return; // só anima quando está visível
+          ir(atual() + 1);
+        }, 3000);
+      });
+    })();
+  </script>
+
+  <!-- Repassa UTMs e IDs de clique (fbclid, gclid, ttclid, src, sck...) para o checkout -->
+  <script>
+    (function () {
+      "use strict";
+
+      var STORAGE_KEY = "lamp_analytics_attribution";
+      var EXPIRATION_DAYS = 7;
+
+      var PARAMS_TO_PRESERVE = [
+        "utm_source", "utm_campaign", "utm_medium", "utm_content", "utm_term", "utm_id",
+        "src", "xcod", "sck", "fbclid", "gclid", "gbraid", "wbraid", "ttclid", "tbclid",
+        "keyword", "CampaignID", "adSETID", "CreativeID", "click_id", "pixel_id", "cid"
+      ];
+
+      var CHECKOUT_HOSTS = [
+        "payfast.greenn.com.br",
+        "greenn.com.br",
+        "pay.kiwify.com.br",
+        "checkout.perfectpay.com.br",
+        "pay.hotmart.com"
+      ];
+
+      function isValidValue(value) {
+        return value !== null && value !== undefined && value !== "" && value !== "null" && value !== "undefined";
+      }
+
+      function getParamsFromCurrentUrl() {
+        var searchParams = new URLSearchParams(window.location.search);
+        var data = {};
+        PARAMS_TO_PRESERVE.forEach(function (param) {
+          var value = searchParams.get(param);
+          if (isValidValue(value)) data[param] = value;
+        });
+        return data;
+      }
+
+      function getStoredAttribution() {
+        try {
+          var stored = localStorage.getItem(STORAGE_KEY);
+          if (!stored) return {};
+          var parsed = JSON.parse(stored);
+          if (!parsed.expires_at) return {};
+          if (new Date(parsed.expires_at).getTime() < Date.now()) {
+            localStorage.removeItem(STORAGE_KEY);
+            return {};
+          }
+          return parsed;
+        } catch (error) {
+          return {};
+        }
+      }
+
+      function saveAttribution() {
+        var now = new Date();
+        var currentParams = getParamsFromCurrentUrl();
+        var previousParams = getStoredAttribution();
+        var expiresAt = new Date(now.getTime() + EXPIRATION_DAYS * 24 * 60 * 60 * 1000).toISOString();
+
+        var attribution = Object.assign({}, previousParams, currentParams, {
+          landing_page: previousParams.landing_page || window.location.href,
+          referrer: previousParams.referrer || document.referrer || "",
+          first_seen_at: previousParams.first_seen_at || now.toISOString(),
+          last_seen_at: now.toISOString(),
+          expires_at: expiresAt
+        });
+
+        try { localStorage.setItem(STORAGE_KEY, JSON.stringify(attribution)); } catch (error) {}
+        return attribution;
+      }
+
+      function isCheckoutUrl(url) {
+        try {
+          var parsedUrl = new URL(url, window.location.origin);
+          return CHECKOUT_HOSTS.some(function (host) {
+            return parsedUrl.hostname === host || parsedUrl.hostname.endsWith("." + host);
+          });
+        } catch (error) {
+          return false;
+        }
+      }
+
+      function appendAttributionToCheckoutUrl(url) {
+        if (!isCheckoutUrl(url)) return url;
+        try {
+          var parsedUrl = new URL(url, window.location.origin);
+          var attribution = getStoredAttribution();
+          // Garante que os parâmetros da visita atual entram mesmo se o navegador bloquear o localStorage
+          var current = getParamsFromCurrentUrl();
+          PARAMS_TO_PRESERVE.forEach(function (param) {
+            var value = isValidValue(current[param]) ? current[param] : attribution[param];
+            if (isValidValue(value)) parsedUrl.searchParams.set(param, value);
+          });
+          return parsedUrl.toString();
+        } catch (error) {
+          return url;
+        }
+      }
+
+      function updateCheckoutLinks() {
+        document.querySelectorAll("a[href]").forEach(function (link) {
+          var href = link.getAttribute("href");
+          if (isCheckoutUrl(href)) link.setAttribute("href", appendAttributionToCheckoutUrl(href));
+        });
+      }
+
+      function handleCheckoutClick(event) {
+        var link = event.target.closest ? event.target.closest("a[href]") : null;
+        if (!link) return;
+        var href = link.getAttribute("href");
+        if (isCheckoutUrl(href)) link.setAttribute("href", appendAttributionToCheckoutUrl(href));
+      }
+
+      function patchWindowOpen() {
+        var originalWindowOpen = window.open;
+        window.open = function (url, target, features) {
+          var finalUrl = (typeof url === "string" && isCheckoutUrl(url)) ? appendAttributionToCheckoutUrl(url) : url;
+          return originalWindowOpen.call(window, finalUrl, target, features);
+        };
+      }
+
+      saveAttribution();
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", updateCheckoutLinks);
+      } else {
+        updateCheckoutLinks();
+      }
+      window.addEventListener("load", updateCheckoutLinks);
+      document.addEventListener("click", handleCheckoutClick, true);
+      patchWindowOpen();
+    })();
+  </script>
+</body>
+</html>
